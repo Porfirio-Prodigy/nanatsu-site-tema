@@ -25,11 +25,10 @@ Objetivo compreender e melhorar as técnicas de Frontend.
 
 <!--Efeitos-->
 <h3 align="center">Efeitos</h3>
-Flip
-Carousel
-Mask-image
-typewriter
-<ul>
+<h6>Flip</h6>
+<h6>Carousel</h6>
+<h6>Mask-image</h6>
+<h6>typewriter</h6>
 <!---->
 
 </div>
