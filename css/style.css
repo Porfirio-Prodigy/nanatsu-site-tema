@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Ancient;
+    src: url("/fonts/Ancient\ Medium.ttf");
+ }
+
+.fonte {
+    font-family: Ancient;
+}
+
+.fonte p {
+    font-size: 25px;
+}
+
+body {
+    background-image: linear-gradient(40deg, #473863 0, #362b5e 25%, #1f1f59 50%, #001554 75%, #000950 100%);
+}
+
+header {
+    background-color: rgba(255, 255, 255, .1);
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+}    
+
+
+footer {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 20px;
+}
+
+.titulo, .titulo:hover {
+    font-size: 50px;
+    color: white;
+    font-family: Ancient;
+}
+
+.bio {
+    color: white;
+}
+
+.img {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.img:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
+
+#Ban:hover{
+    content: url('/images/ban2.png');
+    border: 7px solid #a33144;
+    background-color: rgba(163,49,68, .85);
+    
+}
+#Diane:hover{
+    content: url('/images/Diane2.png');
+    border: 7px solid #e18d3a;
+    background-color: rgba(225,141,58, .85);
+}
+#Escanor:hover {
+    content: url('/images/escanor2.png');
+    border: 7px solid #3e522c;
+    background-color: rgba(62,82,44, .85);
+}
+#Gowther:hover {
+    content: url('/images/gowther2.png');
+    border: 7px solid #b7a1d7;
+    background-color: rgba(183,161,215, .85);
+}
+#King:hover {
+    content: url('/images/king2.png');
+    border: 7px solid #7eccbf;
+    background-color: rgba(126,204,191, .85);
+}
+#Meliodas:hover {
+    content: url('/images/meliodas2.png');
+    border: 7px solid #efd44e;
+    background-color: rgba(239,212,78, .85);
+}
+#Merlin:hover {
+    content: url('/images/merlin2.png');
+    border: 7px solid #443867;
+    background-color: rgba(68,56,103, .85);
+}
+
+/*responsividade*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+    .img {
+        width: 115%
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .img {
+        width: 115%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .img {
+        width: 120%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .img {
+        width: 250px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .img {
+        width: 340px;
+    }
+}

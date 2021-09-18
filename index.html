@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Nanatsu no Taizai</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!---->
+
+    <!--Slick-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!---->
+
+
+    <script src="/javascript/typewriter.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body onload="musica()">
+    <script>
+        function musica() {
+            let audio = new Audio('/audio/theme.mp3');
+            audio.play()
+        };
+    </script>
+
+<header>
+    <nav class="navbar navbar-expand-sm ">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="navbar-brand" href="#">
+                <img id="logo" onclick="clicado(this.id)" src="/images/logo.png" width="100">
+            </a>
+          </li>
+          <li class="nav-item mt-2" align="center">
+            <a class="nav-link titulo" href="#">
+                Nanatsu no taizai
+            </a>
+          </li>
+        </ul>
+    </nav>
+</header>
+
+<main>  
+    <div class="container-fluid">
+        <div class="carousel">
+            <div><img id="Ban" class="img" src="/images/Ban.jpg" onclick="clicado(this.id)" alt="Ban" width="340"/></div>
+            <div><img id="Diane" class="img" src="/images/Diane.jpg" onclick="clicado(this.id)" alt="Diane" width="340"/></div>
+            <div><img id="Escanor" class="img" src="/images/Escanor.jpg" onclick="clicado(this.id)" alt="Escanor" width="340"/></div>
+            <div><img id="Gowther" class="img" src="/images/Gowther.jpg" onclick="clicado(this.id)" alt="Gowther" width="340"/></div>
+            <div><img id="King" class="img" src="/images/King.jpg" alt="King" onclick="clicado(this.id)" width="340"/></div>
+            <div><img id="Meliodas" class="img" src="/images/Meliodas.jpg" onclick="clicado(this.id)" alt="Meliodas" width="340"/></div>
+            <div><img id="Merlin" class="img" src="/images/Merlin.jpg" onclick="clicado(this.id)" alt="Merlin" width="340"/></div>
+        </div>
+
+        <div class="container mt-5 bio">
+            <div class="row">
+                <div class="col-2 col-sm-2"></div>
+                <div class="col col-sm-8 fonte" align="center">
+                    <h1>Nanatsu No Taizai</h1>
+                    <p>
+                        Os Sete Pecados Capitais são um grupo de cavaleiros que vivem na região de Britânia , mas se separaram, depois de serem acusados de tentar derrubar o Reino de Liones. 
+                    </p>
+                </div>
+                <div class="col-2 col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="mt-5">
+    <div class="d-flex justify-content-around">
+        <a href="https://www.linkedin.com/in/joão-porfirio/" class="btn btn-dark">
+            Linked In
+        </a>
+        <a href="https://www.instagram.com/joaoporfirio6431/" class="btn btn-dark">
+            Instagram
+        </a>
+        <a href="https://github.com/Porfirio-Prodigy" class="btn btn-dark">
+            Github
+        </a>
+    </div>
+</footer>
+    
+<script src="/javascript/script.js"></script>
+<script>  
+    let titulo = document.querySelector('h1');
+    
+    let paragrafo = document.querySelector('p');
+    
+    function clicado(id) {
+        if(id == "Ban"){
+            
+            let frase = "“Um verdadeiro pecado jamais poderá ser apagado, não importa o que você faça.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "Diane"){
+            
+            let frase = "“Memórias podem ser esquecidas, mais um sentimento nunca será apagado.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "Escanor"){
+            
+            let frase = "“Peça perdão a mim por ter nascido em meu mundo.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "King"){
+            
+            let frase = "“Não importa se você é grande ou pequeno, você sempre é você.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "Gowther"){
+            
+            let frase = "“Memórias são meras informações. Não é difícil criá-las ou apagá-las. O que eu quero entender... São as emoções que existem por trás delas.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "Merlin"){
+            
+            let frase = "“A justiça pode se tornar algo maligno. A realidade pode se tornar uma ilusão. O significado pode ser encontrado em algo que parece sem sentido.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "Meliodas"){
+            
+            let frase = "“O que é importante, não é o que os outros pensam de você, mas o que você sente por eles.”";
+            paragrafo.innerHTML = frase;
+
+            typeWriter(titulo, id);
+        }
+        if(id == "logo"){
+            let frase = "Os Sete Pecados Capitais são um grupo de cavaleiros que vivem na região de Britânia , mas se separaram, depois de serem acusados de tentar derrubar o Reino de Liones.";
+            paragrafo.innerHTML = frase;
+            
+            typeWriter(titulo, "Nanatsu no Taizai");
+        }
+    }
+    
+
+</script>
+
+</body>
+</html>
