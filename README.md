@@ -13,7 +13,6 @@ Objetivo compreender e melhorar as técnicas de Frontend.
 <!--tecnologias-->
 <a href="http://kenwheeler.github.io/slick/">Slick</a><br>
 <a href="https://getbootstrap.com/">Bootstrap</a><br>
-<a href="https://parall.ax/products/jspdf">jsPDF</a><br>
 
 <!---->
 <h3 align="center">Linguagens</h3>
