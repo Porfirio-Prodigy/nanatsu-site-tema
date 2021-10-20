@@ -1,6 +1,6 @@
 <h1 align="center">Nanatsu Thema</h1> 
 <p align="center">
-Objetivo compreender e melhorar as técnicas de Frontend.
+Objetivo: compreender e melhorar as técnicas de Frontend.
 <p>
 
 <h4 align="center"> 
